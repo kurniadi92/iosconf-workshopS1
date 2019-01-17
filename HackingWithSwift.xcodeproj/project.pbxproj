@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		4AC4D7D021F01700004733A3 /* ProjectTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AC4D7CF21F01700004733A3 /* ProjectTest.swift */; };
 		4AC4D7D221F01B33004733A3 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AC4D7D121F01B33004733A3 /* DetailView.swift */; };
+		4AC4D7D421F0256B004733A3 /* WebViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AC4D7D321F0256B004733A3 /* WebViewDelegate.swift */; };
+		4AC4D7D621F02DA4004733A3 /* ArticleListDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AC4D7D521F02DA4004733A3 /* ArticleListDataSource.swift */; };
+		4AC4D7D821F03395004733A3 /* ArticleListDataSourceTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AC4D7D721F03395004733A3 /* ArticleListDataSourceTest.swift */; };
 		5155740221AEB92500FEE77E /* GameProjectRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5155740121AEB92500FEE77E /* GameProjectRenderer.swift */; };
 		5155740421AEBA4900FEE77E /* TechniqueProjectRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5155740321AEBA4900FEE77E /* TechniqueProjectRenderer.swift */; };
 		5155740721AED1B000FEE77E /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5155740621AED1B000FEE77E /* Logger.swift */; };
@@ -40,6 +43,9 @@
 /* Begin PBXFileReference section */
 		4AC4D7CF21F01700004733A3 /* ProjectTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectTest.swift; sourceTree = "<group>"; };
 		4AC4D7D121F01B33004733A3 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		4AC4D7D321F0256B004733A3 /* WebViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewDelegate.swift; sourceTree = "<group>"; };
+		4AC4D7D521F02DA4004733A3 /* ArticleListDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleListDataSource.swift; sourceTree = "<group>"; };
+		4AC4D7D721F03395004733A3 /* ArticleListDataSourceTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleListDataSourceTest.swift; sourceTree = "<group>"; };
 		5155740121AEB92500FEE77E /* GameProjectRenderer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameProjectRenderer.swift; sourceTree = "<group>"; };
 		5155740321AEBA4900FEE77E /* TechniqueProjectRenderer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TechniqueProjectRenderer.swift; sourceTree = "<group>"; };
 		5155740621AED1B000FEE77E /* Logger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
@@ -126,6 +132,8 @@
 				519AE1532194787E001F5CFF /* Assets.xcassets */,
 				519AE1582194787E001F5CFF /* Info.plist */,
 				4AC4D7D121F01B33004733A3 /* DetailView.swift */,
+				4AC4D7D321F0256B004733A3 /* WebViewDelegate.swift */,
+				4AC4D7D521F02DA4004733A3 /* ArticleListDataSource.swift */,
 			);
 			path = HackingWithSwift;
 			sourceTree = "<group>";
@@ -136,6 +144,7 @@
 				519AE1612194787E001F5CFF /* HackingWithSwiftTests.swift */,
 				519AE1632194787E001F5CFF /* Info.plist */,
 				4AC4D7CF21F01700004733A3 /* ProjectTest.swift */,
+				4AC4D7D721F03395004733A3 /* ArticleListDataSourceTest.swift */,
 			);
 			path = HackingWithSwiftTests;
 			sourceTree = "<group>";
@@ -246,6 +255,8 @@
 				4AC4D7D221F01B33004733A3 /* DetailView.swift in Sources */,
 				519AE14F2194787D001F5CFF /* ViewController.swift in Sources */,
 				519AE14D2194787D001F5CFF /* AppDelegate.swift in Sources */,
+				4AC4D7D421F0256B004733A3 /* WebViewDelegate.swift in Sources */,
+				4AC4D7D621F02DA4004733A3 /* ArticleListDataSource.swift in Sources */,
 				51D797BE21EDB37B00B31E59 /* SettingsViewController.swift in Sources */,
 				519AE16F219479E3001F5CFF /* Project.swift in Sources */,
 				5155740721AED1B000FEE77E /* Logger.swift in Sources */,
@@ -261,6 +272,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4AC4D7D821F03395004733A3 /* ArticleListDataSourceTest.swift in Sources */,
 				519AE1622194787E001F5CFF /* HackingWithSwiftTests.swift in Sources */,
 				4AC4D7D021F01700004733A3 /* ProjectTest.swift in Sources */,
 			);
