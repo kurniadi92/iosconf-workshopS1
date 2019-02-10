@@ -7,7 +7,7 @@
 
 import UIKit
 
-class DetailViewController: UIViewController {
+class DetailViewController: UIViewController, LogHandlingProtocol {
     var project: Project!
 
     override func viewDidLoad() {
@@ -20,7 +20,7 @@ class DetailViewController: UIViewController {
         
         navigationItem.largeTitleDisplayMode = .never
         title = "Project \(project.number)"
-        Logger.log("Showed project \(project.number).")
+        log("Showed project \(project.number).")
         
         let detailView = DetailView(withProject: project) { [weak self] in
              self?.readProject()

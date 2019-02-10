@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		4A8453D02210709F00333A67 /* BundleExtensionTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A8453CF2210709F00333A67 /* BundleExtensionTest.swift */; };
 		4A8453D2221073AE00333A67 /* Bundle+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A8453D1221073AE00333A67 /* Bundle+Ext.swift */; };
+		4A8453D62210754000333A67 /* AnalyticHandlingProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A8453D52210754000333A67 /* AnalyticHandlingProtocol.swift */; };
 		4AC4D7D021F01700004733A3 /* ProjectTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AC4D7CF21F01700004733A3 /* ProjectTest.swift */; };
 		4AC4D7D221F01B33004733A3 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AC4D7D121F01B33004733A3 /* DetailView.swift */; };
 		4AC4D7D421F0256B004733A3 /* WebViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AC4D7D321F0256B004733A3 /* WebViewDelegate.swift */; };
@@ -45,6 +46,7 @@
 /* Begin PBXFileReference section */
 		4A8453CF2210709F00333A67 /* BundleExtensionTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BundleExtensionTest.swift; sourceTree = "<group>"; };
 		4A8453D1221073AE00333A67 /* Bundle+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle+Ext.swift"; sourceTree = "<group>"; };
+		4A8453D52210754000333A67 /* AnalyticHandlingProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalyticHandlingProtocol.swift; sourceTree = "<group>"; };
 		4AC4D7CF21F01700004733A3 /* ProjectTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectTest.swift; sourceTree = "<group>"; };
 		4AC4D7D121F01B33004733A3 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 		4AC4D7D321F0256B004733A3 /* WebViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewDelegate.swift; sourceTree = "<group>"; };
@@ -98,6 +100,14 @@
 			path = Extension;
 			sourceTree = "<group>";
 		};
+		4A8453D42210752F00333A67 /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				4A8453D52210754000333A67 /* AnalyticHandlingProtocol.swift */,
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
 		5155740521AEBECE00FEE77E /* ProjectRenderers */ = {
 			isa = PBXGroup;
 			children = (
@@ -129,6 +139,7 @@
 		519AE14B2194787D001F5CFF /* HackingWithSwift */ = {
 			isa = PBXGroup;
 			children = (
+				4A8453D42210752F00333A67 /* Protocol */,
 				4A8453D3221073B900333A67 /* Extension */,
 				5155740521AEBECE00FEE77E /* ProjectRenderers */,
 				519AE14C2194787D001F5CFF /* AppDelegate.swift */,
@@ -266,6 +277,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				519AE16D21947911001F5CFF /* DetailViewController.swift in Sources */,
+				4A8453D62210754000333A67 /* AnalyticHandlingProtocol.swift in Sources */,
 				4A8453D2221073AE00333A67 /* Bundle+Ext.swift in Sources */,
 				4AC4D7D221F01B33004733A3 /* DetailView.swift in Sources */,
 				519AE14F2194787D001F5CFF /* ViewController.swift in Sources */,
