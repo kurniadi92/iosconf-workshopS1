@@ -21,7 +21,7 @@ class ProjectTest: XCTestCase {
         XCTAssertEqual(project.makeAttributedString(), attributedStringMock())
     }
     
-    func attributedStringMock() -> NSAttributedString {
+    private func attributedStringMock() -> NSAttributedString {
         let titleAttributes = [NSAttributedString.Key.font: UIFont.preferredFont(forTextStyle: .headline), NSAttributedString.Key.foregroundColor: UIColor.purple]
         let subtitleAttributes = [NSAttributedString.Key.font: UIFont.preferredFont(forTextStyle: .subheadline)]
         
@@ -31,5 +31,12 @@ class ProjectTest: XCTestCase {
         titleString.append(subtitleString)
         
         return titleString
+    }
+    
+    func testEquatable() {
+        let project = Project(number: 1, title: "mock-title", subtitle: "mock-substile", topics: "mock-topic")
+        let project2 = Project(number: 1, title: "mock-title", subtitle: "mock-substile", topics: "mock-topic")
+        
+        XCTAssertEqual(project, project2)
     }
 }

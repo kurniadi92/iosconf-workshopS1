@@ -25,3 +25,13 @@ struct Project: Codable {
         return titleString
     }
 }
+
+extension Project: Equatable {
+    static func ==(lhs: Project, rhs: Project) -> Bool {
+        return lhs.number == rhs.number &&
+            lhs.title == rhs.title &&
+            lhs.subtitle == rhs.subtitle &&
+            lhs.topics == rhs.topics &&
+            lhs.makeAttributedString() == rhs.makeAttributedString()
+    }
+}
