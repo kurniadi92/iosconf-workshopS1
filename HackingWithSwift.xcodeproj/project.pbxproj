@@ -10,6 +10,8 @@
 		4A8453D02210709F00333A67 /* BundleExtensionTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A8453CF2210709F00333A67 /* BundleExtensionTest.swift */; };
 		4A8453D2221073AE00333A67 /* Bundle+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A8453D1221073AE00333A67 /* Bundle+Ext.swift */; };
 		4A8453D62210754000333A67 /* AnalyticHandlingProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A8453D52210754000333A67 /* AnalyticHandlingProtocol.swift */; };
+		4A8453D82210803100333A67 /* URLHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A8453D72210803100333A67 /* URLHandler.swift */; };
+		4A8453DA221080FE00333A67 /* WebViewDelegateTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A8453D9221080FE00333A67 /* WebViewDelegateTest.swift */; };
 		4AC4D7D021F01700004733A3 /* ProjectTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AC4D7CF21F01700004733A3 /* ProjectTest.swift */; };
 		4AC4D7D221F01B33004733A3 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AC4D7D121F01B33004733A3 /* DetailView.swift */; };
 		4AC4D7D421F0256B004733A3 /* WebViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AC4D7D321F0256B004733A3 /* WebViewDelegate.swift */; };
@@ -47,6 +49,8 @@
 		4A8453CF2210709F00333A67 /* BundleExtensionTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BundleExtensionTest.swift; sourceTree = "<group>"; };
 		4A8453D1221073AE00333A67 /* Bundle+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle+Ext.swift"; sourceTree = "<group>"; };
 		4A8453D52210754000333A67 /* AnalyticHandlingProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalyticHandlingProtocol.swift; sourceTree = "<group>"; };
+		4A8453D72210803100333A67 /* URLHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLHandler.swift; sourceTree = "<group>"; };
+		4A8453D9221080FE00333A67 /* WebViewDelegateTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewDelegateTest.swift; sourceTree = "<group>"; };
 		4AC4D7CF21F01700004733A3 /* ProjectTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectTest.swift; sourceTree = "<group>"; };
 		4AC4D7D121F01B33004733A3 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 		4AC4D7D321F0256B004733A3 /* WebViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewDelegate.swift; sourceTree = "<group>"; };
@@ -158,6 +162,7 @@
 				4AC4D7D121F01B33004733A3 /* DetailView.swift */,
 				4AC4D7D321F0256B004733A3 /* WebViewDelegate.swift */,
 				4AC4D7D521F02DA4004733A3 /* ArticleListDataSource.swift */,
+				4A8453D72210803100333A67 /* URLHandler.swift */,
 			);
 			path = HackingWithSwift;
 			sourceTree = "<group>";
@@ -170,6 +175,7 @@
 				4AC4D7CF21F01700004733A3 /* ProjectTest.swift */,
 				4AC4D7D721F03395004733A3 /* ArticleListDataSourceTest.swift */,
 				4A8453CF2210709F00333A67 /* BundleExtensionTest.swift */,
+				4A8453D9221080FE00333A67 /* WebViewDelegateTest.swift */,
 			);
 			path = HackingWithSwiftTests;
 			sourceTree = "<group>";
@@ -289,6 +295,7 @@
 				5155740721AED1B000FEE77E /* Logger.swift in Sources */,
 				519BA1EA21AE8BEB0078B6F6 /* AppProjectRenderer.swift in Sources */,
 				5155740421AEBA4900FEE77E /* TechniqueProjectRenderer.swift in Sources */,
+				4A8453D82210803100333A67 /* URLHandler.swift in Sources */,
 				5155740221AEB92500FEE77E /* GameProjectRenderer.swift in Sources */,
 				519AE17321948C5A001F5CFF /* ReadViewController.swift in Sources */,
 				51D797C021EDBD1A00B31E59 /* User.swift in Sources */,
@@ -302,6 +309,7 @@
 				4AC4D7D821F03395004733A3 /* ArticleListDataSourceTest.swift in Sources */,
 				519AE1622194787E001F5CFF /* HackingWithSwiftTests.swift in Sources */,
 				4AC4D7D021F01700004733A3 /* ProjectTest.swift in Sources */,
+				4A8453DA221080FE00333A67 /* WebViewDelegateTest.swift in Sources */,
 				4A8453D02210709F00333A67 /* BundleExtensionTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

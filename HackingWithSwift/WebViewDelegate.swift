@@ -11,10 +11,12 @@ import WebKit
 
 class WebViewDelegate: NSObject, WKNavigationDelegate {
     
-    var allowedSites = [String]()
+    fileprivate var allowedSites = [String]()
+    fileprivate var urlHandler: URLHandler
     
-    init(allowNavigationTo allowedSites:[String]) {
+    init(allowNavigationTo allowedSites:[String], urlHandler: URLHandler) {
         self.allowedSites = allowedSites
+        self.urlHandler = urlHandler
     }
     
     func webView(_ webView: WKWebView, decidePolicyFor navigationAction: WKNavigationAction, decisionHandler: @escaping (WKNavigationActionPolicy) -> Void) {
@@ -25,10 +27,7 @@ class WebViewDelegate: NSObject, WKNavigationDelegate {
             }
         }
         
-        if let url = navigationAction.request.url {
-            UIApplication.shared.open(url, options: [:])
-        }
-        
+        self.urlHandler.openUrl(url: navigationAction.request.url)
         decisionHandler(.cancel)
     }
 }
