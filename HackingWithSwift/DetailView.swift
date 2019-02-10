@@ -13,9 +13,9 @@ class DetailView: UIView {
     var project: Project!
     private var readButtonClicked: (() -> ())?
     
-    init(withProject project:Project, frame: CGRect,  readButtonAction: @escaping () -> Void) {
+    init(withProject project:Project, readButtonAction: @escaping () -> Void) {
         readButtonClicked = readButtonAction
-        super.init(frame: frame)
+        super.init(frame: CGRect.zero)
         
         self.project = project
         self.backgroundColor = UIColor.white

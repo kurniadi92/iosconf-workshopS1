@@ -22,7 +22,7 @@ class DetailViewController: UIViewController {
         title = "Project \(project.number)"
         Logger.log("Showed project \(project.number).")
         
-        let detailView = DetailView(withProject: project, frame: view.frame) { [weak self] in
+        let detailView = DetailView(withProject: project) { [weak self] in
              self?.readProject()
         }
         
