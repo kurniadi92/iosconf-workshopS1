@@ -14,18 +14,18 @@ import WebKit
 class URLHandlerMock: URLHandler {
     private (set) var isOpenUrlCalled = false
     
-    override func openUrl(url: URL?) {
+    override func openUrl(navigationAction: WKNavigationAction, decisionHandler: @escaping (WKNavigationActionPolicy) -> Void) {
         isOpenUrlCalled = true
     }
 }
 
 class WebViewDelegateTest: XCTestCase {
 
-    func disabkedTestOpenWebview() {
-        let urlHandler = URLHandlerMock()
+    func testOpenWebview() {
+        let urlHandler = URLHandlerMock(allowNavigateTo: ["http://www.google.com"])
         let wkNavigation = WKNavigationAction()
         
-        let webViewDelegate = WebViewDelegate(allowNavigationTo: ["http://www.google.com"], urlHandler: urlHandler)
+        let webViewDelegate = WebViewDelegate(urlHandler: urlHandler)
         webViewDelegate.webView(WKWebView(), decidePolicyFor: wkNavigation) { _ in
             //nothing
         }

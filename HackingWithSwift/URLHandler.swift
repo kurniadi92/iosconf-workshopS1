@@ -8,11 +8,28 @@
 
 import Foundation
 import UIKit
+import WebKit
 
 class URLHandler {
-    func openUrl(url: URL?) {
-        if let validUrl = url {
-            UIApplication.shared.open(validUrl, options: [:])
+    
+    private var allowedSites = [String]()
+    
+    init(allowNavigateTo allowedSites:[String]) {
+        self.allowedSites = allowedSites
+    }
+    
+    func openUrl(navigationAction: WKNavigationAction, decisionHandler: @escaping (WKNavigationActionPolicy) -> Void) {
+        if let host = navigationAction.request.url?.host {
+            if allowedSites.contains(where: host.contains) {
+                decisionHandler(.allow)
+                return
+            }
         }
+        
+        guard let url = navigationAction.request.url else {
+            return
+        }
+        UIApplication.shared.open(url, options: [:])
+        decisionHandler(.cancel)
     }
 }

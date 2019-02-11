@@ -16,7 +16,7 @@ class ReadViewController: UIViewController, LogHandlingProtocol {
     let allowedSites = ["apple.com", "hackingwithswift.com"]
 
     override func loadView() {
-        webviewDelegate = WebViewDelegate(allowNavigationTo: allowedSites, urlHandler: URLHandler())
+        webviewDelegate = WebViewDelegate(urlHandler: URLHandler(allowNavigateTo: allowedSites))
         webView.navigationDelegate = webviewDelegate
 
         view = webView
