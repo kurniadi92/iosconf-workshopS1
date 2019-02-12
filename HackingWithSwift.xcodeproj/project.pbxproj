@@ -14,6 +14,8 @@
 		4A8453DA221080FE00333A67 /* WebViewDelegateTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A8453D9221080FE00333A67 /* WebViewDelegateTest.swift */; };
 		4A8453DC2211C94000333A67 /* RendererProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A8453DB2211C94000333A67 /* RendererProtocol.swift */; };
 		4A8453DE22132A0A00333A67 /* GeneralProjectRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A8453DD22132A0A00333A67 /* GeneralProjectRenderer.swift */; };
+		4A8453E022132D9000333A67 /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A8453DF22132D9000333A67 /* MainCoordinator.swift */; };
+		4A8453E42213319100333A67 /* MainCoordinatorTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A8453E32213319100333A67 /* MainCoordinatorTest.swift */; };
 		4AC4D7D021F01700004733A3 /* ProjectTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AC4D7CF21F01700004733A3 /* ProjectTest.swift */; };
 		4AC4D7D221F01B33004733A3 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AC4D7D121F01B33004733A3 /* DetailView.swift */; };
 		4AC4D7D421F0256B004733A3 /* WebViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AC4D7D321F0256B004733A3 /* WebViewDelegate.swift */; };
@@ -55,6 +57,8 @@
 		4A8453D9221080FE00333A67 /* WebViewDelegateTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewDelegateTest.swift; sourceTree = "<group>"; };
 		4A8453DB2211C94000333A67 /* RendererProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RendererProtocol.swift; sourceTree = "<group>"; };
 		4A8453DD22132A0A00333A67 /* GeneralProjectRenderer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralProjectRenderer.swift; sourceTree = "<group>"; };
+		4A8453DF22132D9000333A67 /* MainCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
+		4A8453E32213319100333A67 /* MainCoordinatorTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoordinatorTest.swift; sourceTree = "<group>"; };
 		4AC4D7CF21F01700004733A3 /* ProjectTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectTest.swift; sourceTree = "<group>"; };
 		4AC4D7D121F01B33004733A3 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 		4AC4D7D321F0256B004733A3 /* WebViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewDelegate.swift; sourceTree = "<group>"; };
@@ -169,6 +173,7 @@
 				4AC4D7D321F0256B004733A3 /* WebViewDelegate.swift */,
 				4AC4D7D521F02DA4004733A3 /* ArticleListDataSource.swift */,
 				4A8453D72210803100333A67 /* URLHandler.swift */,
+				4A8453DF22132D9000333A67 /* MainCoordinator.swift */,
 			);
 			path = HackingWithSwift;
 			sourceTree = "<group>";
@@ -182,6 +187,7 @@
 				4AC4D7D721F03395004733A3 /* ArticleListDataSourceTest.swift */,
 				4A8453CF2210709F00333A67 /* BundleExtensionTest.swift */,
 				4A8453D9221080FE00333A67 /* WebViewDelegateTest.swift */,
+				4A8453E32213319100333A67 /* MainCoordinatorTest.swift */,
 			);
 			path = HackingWithSwiftTests;
 			sourceTree = "<group>";
@@ -289,6 +295,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				519AE16D21947911001F5CFF /* DetailViewController.swift in Sources */,
+				4A8453E022132D9000333A67 /* MainCoordinator.swift in Sources */,
 				4A8453D62210754000333A67 /* AnalyticHandlingProtocol.swift in Sources */,
 				4A8453D2221073AE00333A67 /* Bundle+Ext.swift in Sources */,
 				4AC4D7D221F01B33004733A3 /* DetailView.swift in Sources */,
@@ -317,6 +324,7 @@
 				4AC4D7D821F03395004733A3 /* ArticleListDataSourceTest.swift in Sources */,
 				519AE1622194787E001F5CFF /* HackingWithSwiftTests.swift in Sources */,
 				4AC4D7D021F01700004733A3 /* ProjectTest.swift in Sources */,
+				4A8453E42213319100333A67 /* MainCoordinatorTest.swift in Sources */,
 				4A8453DA221080FE00333A67 /* WebViewDelegateTest.swift in Sources */,
 				4A8453D02210709F00333A67 /* BundleExtensionTest.swift in Sources */,
 			);

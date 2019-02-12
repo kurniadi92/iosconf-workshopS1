@@ -8,6 +8,7 @@
 import UIKit
 
 class ViewController: UITableViewController {
+    weak var coordinator: MainCoordinator?
     var user = User()
 
     var articleListDataSource: ArticleListDataSource = ArticleListDataSource()
@@ -24,13 +25,7 @@ class ViewController: UITableViewController {
     }
 
     @objc func showSettings() {
-        guard let vc = storyboard?.instantiateViewController(withIdentifier: "SettingsViewController") as? SettingsViewController else {
-            fatalError("Unable to find SettingsViewController")
-        }
-
-        vc.delegate = self
-        vc.user = user
-        navigationController?.pushViewController(vc, animated: true)
+        coordinator?.showSetting(for: user, whenDataUpdatedChange: self)
     }
 
     func updateUser(_ newUser: User) {
@@ -48,12 +43,7 @@ class ViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let project = articleListDataSource.showingProject[indexPath.row]
-
-        guard let detailVC = storyboard?.instantiateViewController(withIdentifier: "DetailViewController") as? DetailViewController else {
-            return
-        }
-
-        detailVC.project = project
-        navigationController?.pushViewController(detailVC, animated: true)
+        
+        coordinator?.showDetail(with: project)
     }
 }
